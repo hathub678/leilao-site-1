@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #1a1a1a;
+}
+
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ff6600;
+}
+
+.logo span {
+  color: #001f3f;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #001f3f;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e6f0ff;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #001f3f;
+  margin-bottom: 20px;
+}
+
+.browse-btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters select, .filters .search-btn {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+}
+
+.featured {
+  padding: 40px 20px;
+}
+
+.featured h2 {
+  text-align: center;
+  color: #001f3f;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.why-us {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.benefits div {
+  max-width: 250px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  background: #001f3f;
+  color: white;
+  padding: 20px;
+}
+
+footer button {
+  background: white;
+  color: #001f3f;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+}
